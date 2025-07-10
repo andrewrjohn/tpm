@@ -16,6 +16,8 @@ import { DatabaseSync } from "node:sqlite";
 import { Encryption } from "./encryption.ts";
 import { Db } from "./db.ts";
 
+const VERSION = "0.1.0";
+
 const BASE_DIR = path.join(os.homedir(), ".password-manager");
 
 const DEFAULT_VAULT_PATH = path.join(BASE_DIR, "vault");
@@ -71,7 +73,7 @@ const CHOICES = {
 
 async function main() {
   console.log("\x1b[34m%s\x1b[0m", "########################");
-  console.log("\x1b[34m%s\x1b[0m", "TPM: Tiny Password Manager v0.1.0");
+  console.log("\x1b[34m%s\x1b[0m", `TPM: Tiny Password Manager v${VERSION}`);
   console.log("\x1b[34m%s\x1b[0m", "########################\n");
 
   await fs.ensureDir(BASE_DIR);
