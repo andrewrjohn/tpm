@@ -17,7 +17,7 @@ deno task dev
 
 ## Install
 
-Download the latest binary from the [releases](https://github.com/andrewjohnson/tpm/releases) page. Confirmed working on mac, other platforms are untested but **should** work. Or you can compile the binary yourself below:
+Download the latest binary from the [releases](https://github.com/andrewrjohn/tpm/releases) page. Confirmed working on mac, other platforms are untested but **should** work. Or you can compile the binary yourself below:
 
 ### Compile Binary
 
