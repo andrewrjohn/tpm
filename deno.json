@@ -1,0 +1,16 @@
+{
+  "tasks": {
+    "dev": "deno run  --allow-env --allow-read --allow-write --allow-sys --watch src/main.ts",
+    "compile": "deno compile --output tpm --allow-env --allow-sys --allow-read --allow-write src/main.ts"
+  },
+  "imports": {
+    "@std/assert": "jsr:@std/assert@1",
+    "@std/crypto": "jsr:@std/crypto@^1.0.5",
+    "@std/csv": "jsr:@std/csv@^1.0.6",
+    "@std/encoding": "jsr:@std/encoding@^1.0.10",
+    "@std/fmt": "jsr:@std/fmt@^1.0.8",
+    "@std/fs": "jsr:@std/fs@^1.0.19",
+    "@inquirer/prompts": "npm:@inquirer/prompts@7.6.0",
+    "@std/path": "jsr:@std/path@^1.1.1"
+  }
+}
